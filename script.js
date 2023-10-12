@@ -25,6 +25,8 @@ Shery.imageEffect("#back", {
   gooey: true,
 });
 
+
+
 var elems = document.querySelectorAll(".elem");
 elems.forEach(function (elem) {
   var h1s = elem.querySelectorAll("h1");
@@ -38,7 +40,7 @@ elems.forEach(function (elem) {
         gsap.to(h1s[index], {
             top: "-=100%",
             ease: Expo.easeInOut, // Corrected ease function name
-            duration: 0.8,
+            duration: 1.5,
             onComplete: function () {
               gsap.set(this._targets[0], { top: "100%" });
               anamiting=false;
